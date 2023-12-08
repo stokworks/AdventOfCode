@@ -1,0 +1,7 @@
+.idea
+__pycache__
+*.pclprof
+
+settings.json
+inputs/*.txt
+venv
