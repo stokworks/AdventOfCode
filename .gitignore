@@ -3,5 +3,6 @@ __pycache__
 *.pclprof
 
 settings.json
-inputs/*.txt
+inputs/*
+!inputs/.gitkeep
 venv
