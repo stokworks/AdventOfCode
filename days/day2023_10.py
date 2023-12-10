@@ -69,7 +69,6 @@ L7JLJL-JLJLJL--JLJ.L""".split('\n')
         assert next(self.part2(self.test_input5)) == 10
         pass
 
-
     def common(self, input_data):
         if len(self.grid) > 0 and self.grid[0] == input_data[0]:
             return
@@ -131,7 +130,6 @@ L7JLJL-JLJLJL--JLJ.L""".split('\n')
         'SE': 'F'
     }
 
-
     def part1(self, input_data):
         s_type = ''
         s_y, s_x = self.start
@@ -141,13 +139,14 @@ L7JLJL-JLJLJL--JLJ.L""".split('\n')
             y, x, dir = queue.popleft()
             (dy, dx), char_map = self.DIR2NEXT[dir]
             next_char = self.grid[y + dy][x + dx]
-            if 0 <= y + dy < len(self.grid) and 0 <= x + dx < len(self.grid[0]) and next_char in char_map and (y + dy, x + dx) not in self.dists:
+            if y == s_y and x == s_x and 0 <= y + dy < len(self.grid) and 0 <= x + dx < len(self.grid[0]) \
+                    and next_char in char_map or (y != s_y or x != s_x) and (y + dy, x + dx) not in self.dists:
                 queue.append((y + dy, x + dx, char_map[next_char]))
                 self.dists[(y + dy, x + dx)] = self.dists[(y, x)] + 1
                 if y == s_y and x == s_x:
                     s_type += dir
 
-        self.grid[s_y] = self.grid[s_y][:s_x] + self.S_TYPE[s_type] + self.grid[s_y][s_x+1:]
+        self.grid[s_y] = self.grid[s_y][:s_x] + self.S_TYPE[s_type] + self.grid[s_y][s_x + 1:]
         yield max(self.dists.values())
 
     def part2(self, input_data):
