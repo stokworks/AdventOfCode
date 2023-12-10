@@ -8,19 +8,18 @@ class Day2015_01(AOCDay):
     data = None
 
     def test(self, input_data):
-        self.common(self.test_input)
-        assert next(self.part1(self.input_data)) == -1
-        assert next(self.part2(self.input_data)) == 5
+        assert next(self.part1(self.test_input)) == -1
+        assert next(self.part2(self.test_input)) == 5
 
     def common(self, input_data):
-        self.data = input_data
+        pass
 
     def part1(self, input_data):
-        yield self.data.count('(') - self.data.count(')')
+        yield input_data.count('(') - input_data.count(')')
 
     def part2(self, input_data):
         pos = 0
-        for i, c in enumerate(self.data):
+        for i, c in enumerate(input_data):
             pos += 1 if c == '(' else -1
             if pos == -1:
                 yield i + 1
