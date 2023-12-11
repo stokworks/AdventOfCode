@@ -1,3 +1,5 @@
+import numpy as np
+
 from days import AOCDay, day
 
 
@@ -26,25 +28,23 @@ turn off 499,499 through 500,500""".split('\n')
             ))
 
     def part1(self, input_data):
-        # naive method
         size = 1000
-        grid = [False] * size**2
+        grid = np.full((size, size), False, dtype=bool)
 
         for i, (s_x, s_y), (e_x, e_y) in self.instrs:
-            for x in range(s_x, e_x + 1):
-                for y in range(s_y, e_y + 1):
-                    grid[x + y * size] = not grid[x + y * size] if i == 't' else i == '+'
+            grid[s_x:e_x+1, s_y:e_y+1] = (True if i == '+' else False if i == '-' else np.invert(grid[s_x:e_x+1, s_y:e_y+1]))
 
-        yield grid.count(True)
+        yield np.count_nonzero(grid)
 
     def part2(self, input_data):
         # naive method
         size = 1000
-        grid = [0] * size**2
+        grid = np.full((size, size), False, dtype=int)
 
         for i, (s_x, s_y), (e_x, e_y) in self.instrs:
-            for x in range(s_x, e_x + 1):
-                for y in range(s_y, e_y + 1):
-                    grid[x + y * size] = max(0, grid[x + y * size] + (2 if i == 't' else 1 if i == '+' else -1))
+            grid_slice = grid[s_x:e_x + 1, s_y:e_y + 1]
+            grid_slice += (2 if i == 't' else 1 if i == '+' else -1)
+            grid_slice = np.maximum(grid_slice, np.zeros(grid_slice.shape, dtype=grid_slice.dtype))
+            grid[s_x:e_x + 1, s_y:e_y + 1] = grid_slice
 
-        yield sum(grid)
+        yield np.sum(grid)
