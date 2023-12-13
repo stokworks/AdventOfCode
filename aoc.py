@@ -148,7 +148,7 @@ def command_markdown(*args):
                 markdown.append('')
 
             current_year = result['year']
-            year_total_time += result['part1']['time'] + result['part2']['time']
+            year_total_time = 0
 
             markdown.append('## ' + str(current_year))
             markdown.append('<table>')
@@ -162,8 +162,10 @@ def command_markdown(*args):
             markdown.append('  <tbody>')
 
         if result['name']:
+            year_total_time += result['part1']['time'] + result['part2']['time']
+
             markdown.append('    <tr>')
-            markdown.append('      <th align="left">{}</th>'.format(result['name']))
+            markdown.append('      <td align="left">{}</td>'.format(result['name']))
             if result['part1']['verified']:
                 markdown.append('      <td>⭐</td>')
                 markdown.append('      <td align="right">{:.4f} ms</td>'.format(result['part1']['time']))
