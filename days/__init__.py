@@ -112,7 +112,8 @@ class AOCDay:
                     dprint(part1)
                 if not printed:
                     dprint('(no output)')
-                dprint('== Ran in {:.4f} ms =='.format((common_time + part1_time) / 1000000))
+                part1_total_time = (common_time + part1_time) / 1000000
+                dprint('== Ran in {:.4f} ms =='.format(part1_total_time))
                 dprint('')
 
                 start_time = time.perf_counter_ns()
@@ -135,8 +136,10 @@ class AOCDay:
                 if not printed:
                     dprint('(no output)')
 
-                dprint('== Ran in {:.4f} ms =='.format((common_time + part2_time) / 1000000))
+                part2_total_time = (common_time + part2_time) / 1000000
+                dprint('== Ran in {:.4f} ms =='.format(part2_total_time))
                 dprint('')
+        return (str(part1), part1_total_time), (str(part2), part2_total_time)
 
     def test(self, input_data):
         pass

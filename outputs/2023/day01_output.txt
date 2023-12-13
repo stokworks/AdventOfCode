@@ -1,9 +1,9 @@
 = Day 2023-1 =
 == Part 1 ==
 55538
-== Ran in 5.9007 ms ==
+== Ran in 2.0268 ms ==
 
 == Part 2 ==
 54875
-== Ran in 23.6728 ms ==
+== Ran in 8.9091 ms ==
 
