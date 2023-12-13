@@ -38,18 +38,9 @@ class Day2023_13(AOCDay):
                     g.append(el)
             yield g
 
-        self.patterns = group(input_data, '')
+        patterns = group(input_data, '')
 
-    def part1(self, input_data):
-        def find_symmetry_index(seq):
-            for i in range(1, len(seq) - 1):
-                if all(a == b for a, b in zip(seq[:i][::-1], seq[i:])):
-                    return i
-            return 0
-
-        summary = 0
-
-        for pattern in self.patterns:
+        for pattern in patterns:
             rows = [''] * len(pattern)
             cols = [''] * len(pattern[0])
 
@@ -58,10 +49,19 @@ class Day2023_13(AOCDay):
                     rows[y] += '1' if c == '#' else '0'
                     cols[x] += '1' if c == '#' else '0'
 
-            rows = [int(row, 2) for row in rows]
-            cols = [int(col, 2) for col in cols]
+            self.patterns.append((rows, cols))
 
-            summary += find_symmetry_index(cols) + find_symmetry_index(rows) * 100
+    def part1(self, input_data):
+        def find_symmetry_index(seq):
+            for i in range(1, len(seq)):
+                if all(a == b for a, b in zip(seq[:i][::-1], seq[i:])):
+                    return i
+            return 0
+
+        summary = 0
+
+        for rows, cols in self.patterns:
+            summary += find_symmetry_index([int(col, 2) for col in cols]) + find_symmetry_index([int(row, 2) for row in rows]) * 100
 
         yield summary
 
