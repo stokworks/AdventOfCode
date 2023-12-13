@@ -170,7 +170,7 @@ def command_markdown(*args):
             markdown.append('')
             markdown.append('[{}](https://adventofcode.com/{}/day/{})'.format(result['name'], result['year'], result['day']))
             markdown.append('')
-            markdown.append('      </td>')
+            markdown.append('</td>')
             if result['part1']['verified']:
                 markdown.append('      <td>⭐</td>')
                 markdown.append('      <td align="right">{:.4f} ms</td>'.format(result['part1']['time']))
@@ -185,7 +185,7 @@ def command_markdown(*args):
             markdown.append('')
             markdown.append('[View]({}/blob/main/days/day{}_{}.py)'.format(SETTINGS['repository'], result['year'], result['day']))
             markdown.append('')
-            markdown.append('      </td>')
+            markdown.append('</td>')
             markdown.append('    </tr>')
 
     markdown.append('  </tbody>')
