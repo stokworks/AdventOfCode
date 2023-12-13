@@ -154,7 +154,7 @@ def command_markdown(*args):
             markdown.append('<table>')
             markdown.append('  <thead>')
             markdown.append('    <tr>')
-            markdown.append('      <th align="left">Name</th>')
+            markdown.append('      <th>Name</th>')
             markdown.append('      <th colspan="2">Part 1</th>')
             markdown.append('      <th colspan="2">Part 2</th>')
             markdown.append('    </tr>')
@@ -163,7 +163,7 @@ def command_markdown(*args):
 
         if result['name']:
             markdown.append('    <tr>')
-            markdown.append('      <th>{}</th>'.format(result['name']))
+            markdown.append('      <th align="left">{}</th>'.format(result['name']))
             if result['part1']['verified']:
                 markdown.append('      <td>⭐</td>')
                 markdown.append('      <td align="right">{:.4f} ms</td>'.format(result['part1']['time']))
