@@ -140,7 +140,7 @@ def command_markdown(*args):
                 markdown.append('  </tbody>')
                 markdown.append('  <tfoot>')
                 markdown.append('    <tr>')
-                markdown.append('      <th>Total execution time for year</th>')
+                markdown.append('      <th>Total time for year</th>')
                 markdown.append('      <th colspan="4" align="right">{:.4f} ms</th>'.format(year_total_time))
                 markdown.append('    </tr>')
                 markdown.append('  </tfoot>')

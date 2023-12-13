@@ -53,7 +53,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
   </tbody>
   <tfoot>
     <tr>
-      <th>Total execution time for year</th>
+      <th>Total time for year</th>
       <th colspan="4" align="right">4331.3485 ms</th>
     </tr>
   </tfoot>
