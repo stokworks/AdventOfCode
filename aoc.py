@@ -183,7 +183,7 @@ def command_markdown(*args):
                 markdown.append('      <td colspan="2"></td>')
             markdown.append('      <td align="center">')
             markdown.append('')
-            markdown.append('[View]({}/blob/main/days/day{}_{}.py)'.format(SETTINGS['repository'], result['year'], result['day']))
+            markdown.append('[View]({}/blob/main/days/day{}_{:02}.py)'.format(SETTINGS['repository'], result['year'], result['day']))
             markdown.append('')
             markdown.append('</td>')
             markdown.append('    </tr>')
