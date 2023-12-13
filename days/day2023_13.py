@@ -1,15 +1,6 @@
 from days import AOCDay, day
 
 
-def find_symmetry_index(seq, exclude=None):
-    for i in range(1, len(seq)):
-        if i == exclude:
-            continue
-        if all(a == b for a, b in zip(seq[:i][::-1], seq[i:])):
-            return i
-    return 0
-
-
 @day(2023, 13)
 class Day2023_13(AOCDay):
     test_input = """#.##..##.
@@ -63,6 +54,12 @@ class Day2023_13(AOCDay):
             self.patterns.append((rows, cols))
 
     def part1(self, input_data):
+        def find_symmetry_index(seq):
+            for i in range(1, len(seq)):
+                if all(a == b for a, b in zip(seq[:i][::-1], seq[i:])):
+                    return i
+            return 0
+
         summary = 0
 
         for rows, cols in self.patterns:
@@ -71,31 +68,28 @@ class Day2023_13(AOCDay):
 
         yield summary
 
+    BITS = {2 ** n for n in range(32)}
+
     def part2(self, input_data):
+        def find_symmetry_index_offby1(seq):
+            for i in range(1, len(seq)):
+                found = False
+                for a, b in zip(seq[:i][::-1], seq[i:]):
+                    if a != b:
+                        if found or abs(a - b) not in self.BITS:
+                            found = False
+                            break
+                        elif abs(a - b) in self.BITS:
+                            found = True
+                if found:
+                    return i
+            return 0
+
         summary = 0
 
         for rows, cols in self.patterns:
-            orig_symmetry_col = find_symmetry_index([int(col, 2) for col in cols])
-            orig_symmetry_row = find_symmetry_index([int(row, 2) for row in rows])
-
-            found = False
-            for y in range(len(rows)):
-                for x in range(len(cols)):
-                    new_row = rows[y][:x] + ('1' if rows[y][x] == '0' else '0') + rows[y][x + 1:]
-                    new_col = cols[x][:y] + ('1' if cols[x][y] == '0' else '0') + cols[x][y + 1:]
-                    new_rows = rows[:y] + [new_row] + rows[y + 1:]
-                    new_cols = cols[:x] + [new_col] + cols[x + 1:]
-
-                    new_symmetry_col = find_symmetry_index([int(col, 2) for col in new_cols], exclude=orig_symmetry_col)
-                    new_symmetry_row = find_symmetry_index([int(row, 2) for row in new_rows], exclude=orig_symmetry_row)
-
-                    if new_symmetry_col != 0 or new_symmetry_row != 0:
-                        summary += new_symmetry_col + new_symmetry_row * 100
-                        found = True
-
-                    if found:
-                        break
-                if found:
-                    break
+            summary += find_symmetry_index_offby1([int(col, 2) for col in cols]) + \
+                       find_symmetry_index_offby1([int(row, 2) for row in rows]) * 100
 
         yield summary
+
