@@ -25,7 +25,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <td align="right">0.0433 ms</td>
       <td>⭐</td>
       <td align="right">0.1178 ms</td>
-      <td>
+      <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_1.py)
 
@@ -41,7 +41,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <td align="right">0.9395 ms</td>
       <td>⭐</td>
       <td align="right">0.8465 ms</td>
-      <td>
+      <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_2.py)
 
@@ -57,7 +57,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <td align="right">1.4572 ms</td>
       <td>⭐</td>
       <td align="right">1.4740 ms</td>
-      <td>
+      <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_3.py)
 
@@ -73,7 +73,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <td align="right">122.8964 ms</td>
       <td>⭐</td>
       <td align="right">4130.3942 ms</td>
-      <td>
+      <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_4.py)
 
@@ -89,7 +89,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <td align="right">4.6855 ms</td>
       <td>⭐</td>
       <td align="right">4.7455 ms</td>
-      <td>
+      <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_5.py)
 
@@ -105,7 +105,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <td align="right">2.7580 ms</td>
       <td>⭐</td>
       <td align="right">60.9906 ms</td>
-      <td>
+      <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_6.py)
 
@@ -141,7 +141,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <td align="right">2.0268 ms</td>
       <td>⭐</td>
       <td align="right">8.9091 ms</td>
-      <td>
+      <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_1.py)
 
@@ -157,7 +157,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <td align="right">0.7891 ms</td>
       <td>⭐</td>
       <td align="right">0.7687 ms</td>
-      <td>
+      <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_2.py)
 
@@ -173,7 +173,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <td align="right">8.4759 ms</td>
       <td>⭐</td>
       <td align="right">615.9297 ms</td>
-      <td>
+      <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_3.py)
 
@@ -189,7 +189,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <td align="right">0.6554 ms</td>
       <td>⭐</td>
       <td align="right">0.6903 ms</td>
-      <td>
+      <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_4.py)
 
@@ -205,7 +205,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <td align="right">0.2859 ms</td>
       <td>⭐</td>
       <td align="right">1.1449 ms</td>
-      <td>
+      <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_5.py)
 
@@ -221,7 +221,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <td align="right">0.0105 ms</td>
       <td>⭐</td>
       <td align="right">0.0058 ms</td>
-      <td>
+      <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_6.py)
 
@@ -237,7 +237,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <td align="right">3.0176 ms</td>
       <td>⭐</td>
       <td align="right">3.3083 ms</td>
-      <td>
+      <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_7.py)
 
@@ -253,7 +253,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <td align="right">4.3306 ms</td>
       <td>⭐</td>
       <td align="right">20.4882 ms</td>
-      <td>
+      <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_8.py)
 
@@ -269,7 +269,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <td align="right">5.2996 ms</td>
       <td>⭐</td>
       <td align="right">5.1273 ms</td>
-      <td>
+      <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_9.py)
 
@@ -285,7 +285,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <td align="right">16.0568 ms</td>
       <td>⭐</td>
       <td align="right">4.1320 ms</td>
-      <td>
+      <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_10.py)
 
@@ -301,7 +301,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <td align="right">120.4099 ms</td>
       <td>⭐</td>
       <td align="right">122.7183 ms</td>
-      <td>
+      <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_11.py)
 
@@ -317,7 +317,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <td align="right">15.8114 ms</td>
       <td>⭐</td>
       <td align="right">644.2310 ms</td>
-      <td>
+      <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_12.py)
 
@@ -333,7 +333,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <td align="right">5.3836 ms</td>
       <td>⭐</td>
       <td align="right">5.2126 ms</td>
-      <td>
+      <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_13.py)
 
@@ -343,7 +343,8 @@ My solutions to [Advent of Code](https://adventofcode.com/).
   <tfoot>
     <tr>
       <th>Total time for year</th>
-      <th colspan="5" align="right">1615.2193 ms</th>
+      <th colspan="4" align="right">1615.2193 ms</th>
+      <th></th>
     </tr>
   </tfoot>
 </table>

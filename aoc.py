@@ -181,7 +181,7 @@ def command_markdown(*args):
                 markdown.append('      <td align="right">{:.4f} ms</td>'.format(result['part2']['time']))
             else:
                 markdown.append('      <td colspan="2"></td>')
-            markdown.append('      <td>')
+            markdown.append('      <td align="center">')
             markdown.append('')
             markdown.append('[View]({}/blob/main/days/day{}_{}.py)'.format(SETTINGS['repository'], result['year'], result['day']))
             markdown.append('')
@@ -192,7 +192,8 @@ def command_markdown(*args):
     markdown.append('  <tfoot>')
     markdown.append('    <tr>')
     markdown.append('      <th>Total time for year</th>')
-    markdown.append('      <th colspan="5" align="right">{:.4f} ms</th>'.format(year_total_time))
+    markdown.append('      <th colspan="4" align="right">{:.4f} ms</th>'.format(year_total_time))
+    markdown.append('      <th></th>')
     markdown.append('    </tr>')
     markdown.append('  </tfoot>')
     markdown.append('</table>')
