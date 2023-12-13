@@ -106,14 +106,16 @@ class AOCDay:
                 dprint('== Part 1 ==')
                 start_time = time.perf_counter_ns()
                 part1 = self.part1(input_data)
-                part1_time = time.perf_counter_ns() - start_time
                 printed = False
                 if part1:
                     for x in part1:
+                        part1_time = time.perf_counter_ns() - start_time
                         if not printed:
                             printed = True
                         dprint(x)
+
                 if not printed:
+                    part1_time = time.perf_counter_ns() - start_time
                     dprint('(no output)')
                 dprint('== Ran in {:.4f} ms =='.format((common_time + part1_time) / 1000000))
                 dprint('')
@@ -130,15 +132,17 @@ class AOCDay:
                 dprint('== Part 2 ==')
                 start_time = time.perf_counter_ns()
                 part2 = self.part2(input_data)
-                part2_time = time.perf_counter_ns() - start_time
                 printed = False
                 if part2:
                     for x in part2:
+                        part2_time = time.perf_counter_ns() - start_time
                         if not printed:
                             printed = True
                         dprint(x)
                 if not printed:
+                    part2_time = time.perf_counter_ns() - start_time
                     dprint('(no output)')
+
                 dprint('== Ran in {:.4f} ms =='.format((common_time + part2_time) / 1000000))
                 dprint('')
 
