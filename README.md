@@ -11,45 +11,106 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <th>Name</th>
       <th colspan="2">Part 1</th>
       <th colspan="2">Part 2</th>
+      <th colspan="2">Solution</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="left">Day 1: Not Quite Lisp</td>
+      <td align="left">
+
+      [Day 1: Not Quite Lisp](https://adventofcode.com/2015/day/1)
+
+      </td>
       <td>⭐</td>
       <td align="right">0.0433 ms</td>
       <td>⭐</td>
       <td align="right">0.1178 ms</td>
+      <td>
+
+      [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_1.py)
+
+      </td>
+    </tr>
     <tr>
-      <td align="left">Day 2: I Was Told There Would Be No Math</td>
+      <td align="left">
+
+      [Day 2: I Was Told There Would Be No Math](https://adventofcode.com/2015/day/2)
+
+      </td>
       <td>⭐</td>
       <td align="right">0.9395 ms</td>
       <td>⭐</td>
       <td align="right">0.8465 ms</td>
+      <td>
+
+      [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_2.py)
+
+      </td>
+    </tr>
     <tr>
-      <td align="left">Day 3: Perfectly Spherical Houses in a Vacuum</td>
+      <td align="left">
+
+      [Day 3: Perfectly Spherical Houses in a Vacuum](https://adventofcode.com/2015/day/3)
+
+      </td>
       <td>⭐</td>
       <td align="right">1.4572 ms</td>
       <td>⭐</td>
       <td align="right">1.4740 ms</td>
+      <td>
+
+      [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_3.py)
+
+      </td>
+    </tr>
     <tr>
-      <td align="left">Day 4: The Ideal Stocking Stuffer</td>
+      <td align="left">
+
+      [Day 4: The Ideal Stocking Stuffer](https://adventofcode.com/2015/day/4)
+
+      </td>
       <td>⭐</td>
       <td align="right">122.8964 ms</td>
       <td>⭐</td>
       <td align="right">4130.3942 ms</td>
+      <td>
+
+      [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_4.py)
+
+      </td>
+    </tr>
     <tr>
-      <td align="left">Day 5: Doesn&apos;t He Have Intern-Elves For This?</td>
+      <td align="left">
+
+      [Day 5: Doesn&apos;t He Have Intern-Elves For This?](https://adventofcode.com/2015/day/5)
+
+      </td>
       <td>⭐</td>
       <td align="right">4.6855 ms</td>
       <td>⭐</td>
       <td align="right">4.7455 ms</td>
+      <td>
+
+      [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_5.py)
+
+      </td>
+    </tr>
     <tr>
-      <td align="left">Day 6: Probably a Fire Hazard</td>
+      <td align="left">
+
+      [Day 6: Probably a Fire Hazard](https://adventofcode.com/2015/day/6)
+
+      </td>
       <td>⭐</td>
       <td align="right">2.7580 ms</td>
       <td>⭐</td>
       <td align="right">60.9906 ms</td>
+      <td>
+
+      [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_6.py)
+
+      </td>
+    </tr>
   </tbody>
   <tfoot>
     <tr>
@@ -66,92 +127,223 @@ My solutions to [Advent of Code](https://adventofcode.com/).
       <th>Name</th>
       <th colspan="2">Part 1</th>
       <th colspan="2">Part 2</th>
+      <th colspan="2">Solution</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="left">Day 1: Trebuchet?!</td>
+      <td align="left">
+
+      [Day 1: Trebuchet?!](https://adventofcode.com/2023/day/1)
+
+      </td>
       <td>⭐</td>
       <td align="right">2.0268 ms</td>
       <td>⭐</td>
       <td align="right">8.9091 ms</td>
+      <td>
+
+      [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_1.py)
+
+      </td>
+    </tr>
     <tr>
-      <td align="left">Day 2: Cube Conundrum</td>
+      <td align="left">
+
+      [Day 2: Cube Conundrum](https://adventofcode.com/2023/day/2)
+
+      </td>
       <td>⭐</td>
       <td align="right">0.7891 ms</td>
       <td>⭐</td>
       <td align="right">0.7687 ms</td>
+      <td>
+
+      [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_2.py)
+
+      </td>
+    </tr>
     <tr>
-      <td align="left">Day 3: Gear Ratios</td>
+      <td align="left">
+
+      [Day 3: Gear Ratios](https://adventofcode.com/2023/day/3)
+
+      </td>
       <td>⭐</td>
       <td align="right">8.4759 ms</td>
       <td>⭐</td>
       <td align="right">615.9297 ms</td>
+      <td>
+
+      [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_3.py)
+
+      </td>
+    </tr>
     <tr>
-      <td align="left">Day 4: Scratchcards</td>
+      <td align="left">
+
+      [Day 4: Scratchcards](https://adventofcode.com/2023/day/4)
+
+      </td>
       <td>⭐</td>
       <td align="right">0.6554 ms</td>
       <td>⭐</td>
       <td align="right">0.6903 ms</td>
+      <td>
+
+      [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_4.py)
+
+      </td>
+    </tr>
     <tr>
-      <td align="left">Day 5: If You Give A Seed A Fertilizer</td>
+      <td align="left">
+
+      [Day 5: If You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5)
+
+      </td>
       <td>⭐</td>
       <td align="right">0.2859 ms</td>
       <td>⭐</td>
       <td align="right">1.1449 ms</td>
+      <td>
+
+      [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_5.py)
+
+      </td>
+    </tr>
     <tr>
-      <td align="left">Day 6: Wait For It</td>
+      <td align="left">
+
+      [Day 6: Wait For It](https://adventofcode.com/2023/day/6)
+
+      </td>
       <td>⭐</td>
       <td align="right">0.0105 ms</td>
       <td>⭐</td>
       <td align="right">0.0058 ms</td>
+      <td>
+
+      [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_6.py)
+
+      </td>
+    </tr>
     <tr>
-      <td align="left">Day 7: Camel Cards</td>
+      <td align="left">
+
+      [Day 7: Camel Cards](https://adventofcode.com/2023/day/7)
+
+      </td>
       <td>⭐</td>
       <td align="right">3.0176 ms</td>
       <td>⭐</td>
       <td align="right">3.3083 ms</td>
+      <td>
+
+      [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_7.py)
+
+      </td>
+    </tr>
     <tr>
-      <td align="left">Day 8: Haunted Wasteland</td>
+      <td align="left">
+
+      [Day 8: Haunted Wasteland](https://adventofcode.com/2023/day/8)
+
+      </td>
       <td>⭐</td>
       <td align="right">4.3306 ms</td>
       <td>⭐</td>
       <td align="right">20.4882 ms</td>
+      <td>
+
+      [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_8.py)
+
+      </td>
+    </tr>
     <tr>
-      <td align="left">Day 9: Mirage Maintenance</td>
+      <td align="left">
+
+      [Day 9: Mirage Maintenance](https://adventofcode.com/2023/day/9)
+
+      </td>
       <td>⭐</td>
       <td align="right">5.2996 ms</td>
       <td>⭐</td>
       <td align="right">5.1273 ms</td>
+      <td>
+
+      [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_9.py)
+
+      </td>
+    </tr>
     <tr>
-      <td align="left">Day 10: Pipe Maze</td>
+      <td align="left">
+
+      [Day 10: Pipe Maze](https://adventofcode.com/2023/day/10)
+
+      </td>
       <td>⭐</td>
       <td align="right">16.0568 ms</td>
       <td>⭐</td>
       <td align="right">4.1320 ms</td>
+      <td>
+
+      [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_10.py)
+
+      </td>
+    </tr>
     <tr>
-      <td align="left">Day 11: Cosmic Expansion</td>
+      <td align="left">
+
+      [Day 11: Cosmic Expansion](https://adventofcode.com/2023/day/11)
+
+      </td>
       <td>⭐</td>
       <td align="right">120.4099 ms</td>
       <td>⭐</td>
       <td align="right">122.7183 ms</td>
+      <td>
+
+      [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_11.py)
+
+      </td>
+    </tr>
     <tr>
-      <td align="left">Day 12: Hot Springs</td>
+      <td align="left">
+
+      [Day 12: Hot Springs](https://adventofcode.com/2023/day/12)
+
+      </td>
       <td>⭐</td>
       <td align="right">15.8114 ms</td>
       <td>⭐</td>
       <td align="right">644.2310 ms</td>
+      <td>
+
+      [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_12.py)
+
+      </td>
+    </tr>
     <tr>
-      <td align="left">Day 13: Point of Incidence</td>
+      <td align="left">
+
+      [Day 13: Point of Incidence](https://adventofcode.com/2023/day/13)
+
+      </td>
       <td>⭐</td>
       <td align="right">5.3836 ms</td>
       <td>⭐</td>
       <td align="right">5.2126 ms</td>
+      <td>
+
+      [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_13.py)
+
+      </td>
+    </tr>
   </tbody>
   <tfoot>
     <tr>
       <th>Total time for year</th>
-      <th colspan="4" align="right">1615.2193 ms</th>
+      <th colspan="5" align="right">1615.2193 ms</th>
     </tr>
   </tfoot>
 </table>
