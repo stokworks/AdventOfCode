@@ -168,7 +168,7 @@ def command_markdown(*args):
             markdown.append('    <tr>')
             markdown.append('      <td align="left">')
             markdown.append('')
-            markdown.append('      [{}](https://adventofcode.com/{}/day/{})'.format(result['name'], result['year'], result['day']))
+            markdown.append('[{}](https://adventofcode.com/{}/day/{})'.format(result['name'], result['year'], result['day']))
             markdown.append('')
             markdown.append('      </td>')
             if result['part1']['verified']:
@@ -183,7 +183,7 @@ def command_markdown(*args):
                 markdown.append('      <td colspan="2"></td>')
             markdown.append('      <td>')
             markdown.append('')
-            markdown.append('      [View]({}/blob/main/days/day{}_{}.py)'.format(SETTINGS['repository'], result['year'], result['day']))
+            markdown.append('[View]({}/blob/main/days/day{}_{}.py)'.format(SETTINGS['repository'], result['year'], result['day']))
             markdown.append('')
             markdown.append('      </td>')
             markdown.append('    </tr>')
