@@ -23,8 +23,8 @@ class Day2023_13(AOCDay):
 
     def test(self, input_data):
         self.common(self.test_input)
-        assert next(self.part1(self.test_input)) == 405
-        assert next(self.part2(self.test_input)) == 400
+        assert self.part1(self.test_input) == 405
+        assert self.part2(self.test_input) == 400
 
     def common(self, input_data):
         def group(seq, sep, include_sep=False):
@@ -66,7 +66,7 @@ class Day2023_13(AOCDay):
             summary += find_symmetry_index([int(col, 2) for col in cols]) + \
                        find_symmetry_index([int(row, 2) for row in rows]) * 100
 
-        yield summary
+        return summary
 
     BITS = {2 ** n for n in range(32)}
 
@@ -91,5 +91,5 @@ class Day2023_13(AOCDay):
             summary += find_symmetry_index_offby1([int(col, 2) for col in cols]) + \
                        find_symmetry_index_offby1([int(row, 2) for row in rows]) * 100
 
-        yield summary
+        return summary
 

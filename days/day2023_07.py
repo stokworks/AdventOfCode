@@ -14,9 +14,9 @@ QQQJA 483""".split('\n')
 
     def test(self, input_data):
         self.common(self.test_input)
-        assert next(self.part1(self.test_input)) == 6440
+        assert self.part1(self.test_input) == 6440
         self.common(self.test_input)
-        assert next(self.part2(self.test_input)) == 5905
+        assert self.part2(self.test_input) == 5905
 
     def common(self, input_data):
         self.hands = [(cards, int(bid)) for cards, bid in map(str.split, input_data)]
@@ -46,7 +46,7 @@ QQQJA 483""".split('\n')
         def hand_sort_key(hand):
             return strength(hand[0]), list([card_vals[card] for card in hand[0]])
 
-        yield sum((rank + 1) * bid for rank, (_, bid) in enumerate(sorted(self.hands, key=hand_sort_key)))
+        return sum((rank + 1) * bid for rank, (_, bid) in enumerate(sorted(self.hands, key=hand_sort_key)))
 
     def part2(self, input_data):
         def strength(cards):
@@ -76,4 +76,4 @@ QQQJA 483""".split('\n')
         def hand_sort_key(hand):
             return strength(hand[0]), list([card_vals[card] for card in hand[0]])
 
-        yield sum((rank + 1) * bid for rank, (_, bid) in enumerate(sorted(self.hands, key=hand_sort_key)))
+        return sum((rank + 1) * bid for rank, (_, bid) in enumerate(sorted(self.hands, key=hand_sort_key)))

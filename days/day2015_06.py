@@ -13,9 +13,9 @@ turn off 499,499 through 500,500""".split('\n')
 
     def test(self, input_data):
         self.common(self.test_input)
-        assert next(self.part1(self.test_input)) == 1000*1000 - 1000 - 4
+        assert self.part1(self.test_input) == 1000*1000 - 1000 - 4
         self.common(self.test_input)
-        assert next(self.part2(self.test_input)) == 1000*1000 + 2000 - 4
+        assert self.part2(self.test_input) == 1000*1000 + 2000 - 4
 
     def common(self, input_data):
         self.instrs = []
@@ -34,7 +34,7 @@ turn off 499,499 through 500,500""".split('\n')
         for i, (s_x, s_y), (e_x, e_y) in self.instrs:
             grid[s_x:e_x+1, s_y:e_y+1] = (True if i == '+' else False if i == '-' else np.invert(grid[s_x:e_x+1, s_y:e_y+1]))
 
-        yield np.count_nonzero(grid)
+        return np.count_nonzero(grid)
 
     def part2(self, input_data):
         # naive method
@@ -47,4 +47,4 @@ turn off 499,499 through 500,500""".split('\n')
             grid_slice = np.maximum(grid_slice, np.zeros(grid_slice.shape, dtype=grid_slice.dtype))
             grid[s_x:e_x + 1, s_y:e_y + 1] = grid_slice
 
-        yield np.sum(grid)
+        return np.sum(grid)

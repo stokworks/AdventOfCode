@@ -1,9 +1,9 @@
 = Day 2015-2 =
 == Part 1 ==
 1598415
-== Ran in 0.9516 ms ==
+== Ran in 1.8092 ms ==
 
 == Part 2 ==
 3812909
-== Ran in 0.8811 ms ==
+== Ran in 1.6432 ms ==
 

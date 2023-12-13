@@ -11,7 +11,7 @@ class Day2023_09(AOCDay):
 
     def test(self, input_data):
         self.common(self.test_input)
-        assert next(self.part1(self.test_input)) == 114
+        assert self.part1(self.test_input) == 114
 
     def common(self, input_data):
         self.histories = [list(map(lambda num: int(num), line.split(' '))) for line in input_data]
@@ -33,7 +33,7 @@ class Day2023_09(AOCDay):
                 future.append(futures[i][-1] + future[-1])
 
             nextinline.append(futures[-1][-1])
-        yield sum(nextinline)
+        return sum(nextinline)
 
     def part2(self, input_data):
         nextinline = []
@@ -48,4 +48,4 @@ class Day2023_09(AOCDay):
                 future.insert(0, future[0] - futures[i][0])
 
             nextinline.append(futures[-1][0])
-        yield sum(nextinline)
+        return sum(nextinline)

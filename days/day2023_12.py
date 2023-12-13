@@ -67,21 +67,21 @@ class Day2023_12(AOCDay):
     test_input9 = """#??????# 1,1,2""".split('\n')
 
     def test(self, input_data):
-        assert next(self.part1(self.test_input)) == 1
-        assert next(self.part1(self.test_input2)) == 4
-        assert next(self.part1(self.test_input3)) == 1
-        assert next(self.part1(self.test_input4)) == 1
-        assert next(self.part1(self.test_input5)) == 4
-        assert next(self.part1(self.test_input6)) == 10
-        assert next(self.part1(self.test_input7)) == 1
-        assert next(self.part1(self.test_input8)) == 4
-        assert next(self.part1(self.test_input9)) == 3
-        assert next(self.part2(self.test_input)) == 1
-        assert next(self.part2(self.test_input2)) == 16384
-        assert next(self.part2(self.test_input3)) == 1
-        assert next(self.part2(self.test_input4)) == 16
-        assert next(self.part2(self.test_input5)) == 2500
-        assert next(self.part2(self.test_input6)) == 506250
+        assert self.part1(self.test_input) == 1
+        assert self.part1(self.test_input2) == 4
+        assert self.part1(self.test_input3) == 1
+        assert self.part1(self.test_input4) == 1
+        assert self.part1(self.test_input5) == 4
+        assert self.part1(self.test_input6) == 10
+        assert self.part1(self.test_input7) == 1
+        assert self.part1(self.test_input8) == 4
+        assert self.part1(self.test_input9) == 3
+        assert self.part2(self.test_input) == 1
+        assert self.part2(self.test_input2) == 16384
+        assert self.part2(self.test_input3) == 1
+        assert self.part2(self.test_input4) == 16
+        assert self.part2(self.test_input5) == 2500
+        assert self.part2(self.test_input6) == 506250
 
     def common(self, input_data):
         pass
@@ -94,7 +94,7 @@ class Day2023_12(AOCDay):
             numbers = tuple(map(int, parts[1].split(',')))
             problems.append((groups, numbers))
 
-        yield sum(possibilities(groups, numbers) for groups, numbers in problems)
+        return sum(possibilities(groups, numbers) for groups, numbers in problems)
 
     def part2(self, input_data):
         problems = []
@@ -104,4 +104,4 @@ class Day2023_12(AOCDay):
             numbers = tuple(map(int, parts[1].split(',') * 5))
             problems.append((groups, numbers))
 
-        yield sum(possibilities(groups, numbers) for groups, numbers in problems)
+        return sum(possibilities(groups, numbers) for groups, numbers in problems)

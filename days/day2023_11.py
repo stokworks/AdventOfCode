@@ -24,7 +24,7 @@ class Day2023_11(AOCDay):
 
     def test(self, input_data):
         self.common(self.test_input)
-        assert next(self.part1(self.test_input)) == 374
+        assert self.part1(self.test_input) == 374
 
     def common(self, input_data):
         grid = np.array([[c == '#' for c in line] for line in input_data], dtype=bool)
@@ -57,7 +57,7 @@ class Day2023_11(AOCDay):
         return total_dist
 
     def part1(self, input_data):
-        yield self.calculate_total_dists(2)
+        return self.calculate_total_dists(2)
 
     def part2(self, input_data):
-        yield self.calculate_total_dists(1000000)
+        return self.calculate_total_dists(1000000)

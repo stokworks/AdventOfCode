@@ -19,8 +19,8 @@ zoneight234
 7pqrstsixteen""".split('\n')
 
     def test(self, input_data):
-        assert next(self.part1(self.test_input)) == 142
-        assert next(self.part2(self.test_input2)) == 281
+        assert self.part1(self.test_input) == 142
+        assert self.part2(self.test_input2) == 281
 
     def common(self, input_data):
         pass
@@ -37,7 +37,7 @@ zoneight234
                     return words[line[i:i + len(w)]]
 
     def part1(self, input_data):
-        yield sum(int(str(self.find(line)) + str(self.find(line[::-1]))) for line in input_data)
+        return sum(int(str(self.find(line)) + str(self.find(line[::-1]))) for line in input_data)
 
     def part2(self, input_data):
         w = {
@@ -55,4 +55,4 @@ zoneight234
 
         w_rev = {word[::-1]: val for word, val in w.items()}
 
-        yield sum(int(str(self.find(line, words=w)) + str(self.find(line[::-1], words=w_rev))) for line in input_data)
+        return sum(int(str(self.find(line, words=w)) + str(self.find(line[::-1], words=w_rev))) for line in input_data)

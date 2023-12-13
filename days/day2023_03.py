@@ -18,8 +18,8 @@ class Day03(AOCDay):
 
     def test(self, input_data):
         self.common(self.test_input)
-        assert next(self.part1(self.input_data)) == 4361
-        assert next(self.part2(self.input_data)) == 467835
+        assert self.part1(self.input_data) == 4361
+        assert self.part2(self.input_data) == 467835
 
     def common(self, input_data):
         self.grid = input_data
@@ -61,7 +61,7 @@ class Day03(AOCDay):
                         break
                 if is_valid_part:
                     break
-        yield acc
+        return acc
 
     def part2(self, input_data):
         NUMS = list(map(str, range(10)))
@@ -99,7 +99,7 @@ class Day03(AOCDay):
                             if part_is_in_ratio:
                                 break
 
-        yield sum(
+        return sum(
             list(map(
                 lambda parts: parts[0]['val'] * parts[1]['val'],
                 list(filter(

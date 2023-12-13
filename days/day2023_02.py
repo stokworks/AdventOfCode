@@ -15,8 +15,8 @@ Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green""".split('\n')
 
     def test(self, input_data):
         self.common(self.test_input)
-        assert next(self.part1(self.input_data)) == 8
-        assert next(self.part2(self.input_data)) == 2286
+        assert self.part1(self.input_data) == 8
+        assert self.part2(self.input_data) == 2286
 
     def common(self, input_data):
         self.games = []
@@ -31,7 +31,7 @@ Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green""".split('\n')
             self.games.append(draws)
 
     def part1(self, input_data):
-        yield sum(
+        return sum(
             n + 1 if not any(map(
                 lambda draws: list(filter(lambda draw: draw[0] > {'red': 12, 'green': 13, 'blue': 14}[draw[1]], draws)),
                 game)
@@ -52,4 +52,4 @@ Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green""".split('\n')
         return math.prod(balls.values())
 
     def part2(self, input_data):
-        yield sum(map(self.power, self.games))
+        return sum(map(self.power, self.games))

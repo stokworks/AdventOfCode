@@ -9,12 +9,12 @@ class Day2015_03(AOCDay):
     test_input4 = "^v"
 
     def test(self, input_data):
-        assert next(self.part1(self.test_input)) == 2
-        assert next(self.part1(self.test_input2)) == 4
-        assert next(self.part1(self.test_input3)) == 2
-        assert next(self.part2(self.test_input4)) == 3
-        assert next(self.part2(self.test_input2)) == 3
-        assert next(self.part2(self.test_input3)) == 11
+        assert self.part1(self.test_input) == 2
+        assert self.part1(self.test_input2) == 4
+        assert self.part1(self.test_input3) == 2
+        assert self.part2(self.test_input4) == 3
+        assert self.part2(self.test_input2) == 3
+        assert self.part2(self.test_input3) == 11
 
     def common(self, input_data):
         pass
@@ -35,7 +35,7 @@ class Day2015_03(AOCDay):
         return visited
 
     def part1(self, input_data):
-        yield len(self.walk(input_data))
+        return len(self.walk(input_data))
 
     def part2(self, input_data):
-        yield len(self.walk(input_data[::2]) | self.walk(input_data[1::2]))
+        return len(self.walk(input_data[::2]) | self.walk(input_data[1::2]))

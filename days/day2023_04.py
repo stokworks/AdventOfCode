@@ -13,8 +13,8 @@ Card 5: 87 83 26 28 32 | 88 30 70 12 93 22 82 36
 Card 6: 31 18 13 56 72 | 74 77 10 23 35 67 36 11""".split('\n')
 
     def test(self, input_data):
-        assert next(self.part1(self.test_input)) == 13
-        assert next(self.part2(self.test_input)) == 30
+        assert self.part1(self.test_input) == 13
+        assert self.part2(self.test_input) == 30
 
     def common(self, input_data):
         pass
@@ -34,7 +34,7 @@ Card 6: 31 18 13 56 72 | 74 77 10 23 35 67 36 11""".split('\n')
             yield n_nrs - len(set(nrs))
 
     def part1(self, input_data):
-        yield sum(map(lambda card: int(2 ** (card - 1)), self.parse(input_data)))
+        return sum(map(lambda card: int(2 ** (card - 1)), self.parse(input_data)))
 
     def part2(self, input_data):
         card_ns = [1] * len(input_data)
@@ -43,4 +43,4 @@ Card 6: 31 18 13 56 72 | 74 77 10 23 35 67 36 11""".split('\n')
             for j in range(card):
                 card_ns[i + j + 1] += card_ns[i]
 
-        yield sum(card_ns)
+        return sum(card_ns)

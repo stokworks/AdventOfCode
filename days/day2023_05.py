@@ -42,9 +42,9 @@ humidity-to-location map:
 
     def test(self, input_data):
         self.common(self.test_input)
-        assert next(self.part1(self.input_data)) == 35
+        assert self.part1(self.input_data) == 35
         self.common(self.test_input)
-        assert next(self.part2(self.input_data)) == 46
+        assert self.part2(self.input_data) == 46
 
     def common(self, input_data):
         self.seeds = map(int, input_data[0].split()[1:])
@@ -71,7 +71,7 @@ humidity-to-location map:
 
             results.append(seed)
 
-        yield min(results)
+        return min(results)
 
     def part2(self, input_data):
         seed_ranges_queue = list(zip(self.seeds, self.seeds))
@@ -114,4 +114,4 @@ humidity-to-location map:
 
             seed_ranges_queue = next_queue
 
-        yield min(begin for begin, end in seed_ranges_queue)
+        return min(begin for begin, end in seed_ranges_queue)

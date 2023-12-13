@@ -38,11 +38,11 @@ XXX = (XXX, XXX)""".split('\n')
 
     def test(self, input_data):
         self.common(self.test_input)
-        assert next(self.part1(self.test_input)) == 2
+        assert self.part1(self.test_input) == 2
         self.common(self.test_input2)
-        assert next(self.part1(self.test_input2)) == 6
+        assert self.part1(self.test_input2) == 6
         self.common(self.test_input3)
-        assert next(self.part2(self.test_input3)) == 6
+        assert self.part2(self.test_input3) == 6
 
     def common(self, input_data):
         self.path = deque(int(c == 'R') for c in input_data[0])
@@ -59,8 +59,8 @@ XXX = (XXX, XXX)""".split('\n')
         return n
 
     def part1(self, input_data):
-        yield self.steps('AAA')
+        return self.steps('AAA')
 
     def part2(self, input_data):
         starts = map(lambda rule: rule[0:3], filter(lambda rule: rule[2] == 'A', input_data[2:]))
-        yield math.lcm(*[self.steps(start) for start in starts])
+        return math.lcm(*[self.steps(start) for start in starts])

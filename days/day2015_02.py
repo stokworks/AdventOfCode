@@ -9,14 +9,14 @@ class Day02(AOCDay):
 
     def test(self, input_data):
         self.common(self.test_input)
-        assert next(self.part1(self.input_data)) == 58
-        assert next(self.part2(self.input_data)) == 34
+        assert self.part1(self.input_data) == 58
+        assert self.part2(self.input_data) == 34
 
     def common(self, input_data):
         self.boxes = [tuple(map(int, box.split('x'))) for box in input_data]
 
     def part1(self, input_data):
-        yield sum(l*h*2 + l*w*2 + h*w*2 + min(l*h, l*w, h*w) for l, h, w in self.boxes)
+        return sum(l*h*2 + l*w*2 + h*w*2 + min(l*h, l*w, h*w) for l, h, w in self.boxes)
 
     def part2(self, input_data):
-        yield sum(min((l+h)*2, (l+w)*2, (h+w)*2) + l*w*h for l, h, w in self.boxes)
+        return sum(min((l+h)*2, (l+w)*2, (h+w)*2) + l*w*h for l, h, w in self.boxes)

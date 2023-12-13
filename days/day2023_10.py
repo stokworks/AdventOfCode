@@ -55,19 +55,18 @@ L7JLJL-JLJLJL--JLJ.L""".split('\n')
 
     def test(self, input_data):
         self.common(self.test_input)
-        assert next(self.part1(self.test_input)) == 4
+        assert self.part1(self.test_input) == 4
         self.common(self.test_input2)
-        assert next(self.part1(self.test_input2)) == 8
+        assert self.part1(self.test_input2) == 8
         self.common(self.test_input3)
-        next(self.part1(self.test_input3))
-        assert next(self.part2(self.test_input3)) == 4
+        self.part1(self.test_input3)
+        assert self.part2(self.test_input3) == 4
         self.common(self.test_input4)
-        next(self.part1(self.test_input4))
-        assert next(self.part2(self.test_input4)) == 8
+        self.part1(self.test_input4)
+        assert self.part2(self.test_input4) == 8
         self.common(self.test_input5)
-        next(self.part1(self.test_input5))
-        assert next(self.part2(self.test_input5)) == 10
-        pass
+        self.part1(self.test_input5)
+        assert self.part2(self.test_input5) == 10
 
     def common(self, input_data):
         if len(self.grid) > 0 and self.grid[0] == input_data[0]:
@@ -147,7 +146,7 @@ L7JLJL-JLJLJL--JLJ.L""".split('\n')
                     s_type += dir
 
         self.grid[s_y] = self.grid[s_y][:s_x] + self.S_TYPE[s_type] + self.grid[s_y][s_x + 1:]
-        yield max(self.dists.values())
+        return max(self.dists.values())
 
     def part2(self, input_data):
         n_inside = 0
@@ -164,4 +163,4 @@ L7JLJL-JLJLJL--JLJ.L""".split('\n')
                 elif c == 'F' or c == 'L':
                     prev = c
 
-        yield n_inside
+        return n_inside

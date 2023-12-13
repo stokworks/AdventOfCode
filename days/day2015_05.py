@@ -15,8 +15,8 @@ uurcxstgmygtbstg
 ieodomkazucvgmuy""".split('\n')
 
     def test(self, input_data):
-        assert next(self.part1(self.test_input)) == 2
-        assert next(self.part2(self.test_input2)) == 2
+        assert self.part1(self.test_input) == 2
+        assert self.part2(self.test_input2) == 2
 
     def common(self, input_data):
         pass
@@ -44,7 +44,7 @@ ieodomkazucvgmuy""".split('\n')
 
             n_nice += 1 if n_nice_vowels == 3 and has_double and not has_naughty_combination else 0
 
-        yield n_nice
+        return n_nice
 
     def part2(self, input_data):
         n_nice = 0
@@ -68,4 +68,4 @@ ieodomkazucvgmuy""".split('\n')
 
             n_nice += 1 if has_double_pair and has_3_palindrome else 0
 
-        yield n_nice
+        return n_nice

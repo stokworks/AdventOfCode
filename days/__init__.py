@@ -81,8 +81,7 @@ class AOCDay:
                 if test:
                     dprint('== Tests Output ==')
                     output = True
-                    for x in test:
-                        dprint(x)
+                    dprint(test)
             except Exception as e:
                 dprint('== Tests Error ==')
                 dprint(''.join(traceback.format_exception(None, e, e.__traceback__)))
@@ -99,23 +98,19 @@ class AOCDay:
                 common_time = time.perf_counter_ns() - start_time
                 if common:
                     dprint('== Common ==')
-                    for x in common:
-                        dprint(x)
+                    dprint(common)
                     dprint('')
 
                 dprint('== Part 1 ==')
                 start_time = time.perf_counter_ns()
                 part1 = self.part1(input_data)
+                part1_time = time.perf_counter_ns() - start_time
                 printed = False
                 if part1:
-                    for x in part1:
-                        part1_time = time.perf_counter_ns() - start_time
-                        if not printed:
-                            printed = True
-                        dprint(x)
-
+                    if not printed:
+                        printed = True
+                    dprint(part1)
                 if not printed:
-                    part1_time = time.perf_counter_ns() - start_time
                     dprint('(no output)')
                 dprint('== Ran in {:.4f} ms =='.format((common_time + part1_time) / 1000000))
                 dprint('')
@@ -125,35 +120,32 @@ class AOCDay:
                 common_time = time.perf_counter_ns() - start_time
                 if common:
                     dprint('== Common ==')
-                    for x in common:
-                        dprint(x)
+                    dprint(common)
                     dprint('')
 
                 dprint('== Part 2 ==')
                 start_time = time.perf_counter_ns()
                 part2 = self.part2(input_data)
+                part2_time = time.perf_counter_ns() - start_time
                 printed = False
                 if part2:
-                    for x in part2:
-                        part2_time = time.perf_counter_ns() - start_time
-                        if not printed:
-                            printed = True
-                        dprint(x)
+                    if not printed:
+                        printed = True
+                    dprint(part2)
                 if not printed:
-                    part2_time = time.perf_counter_ns() - start_time
                     dprint('(no output)')
 
                 dprint('== Ran in {:.4f} ms =='.format((common_time + part2_time) / 1000000))
                 dprint('')
 
-    def test(self, input_data) -> Generator:
+    def test(self, input_data):
         pass
 
-    def common(self, input_data) -> Generator:
+    def common(self, input_data):
         pass
 
-    def part1(self, input_data) -> Generator:
+    def part1(self, input_data):
         pass
 
-    def part2(self, input_data) -> Generator:
+    def part2(self, input_data):
         pass
