@@ -170,7 +170,8 @@ def command_markdown(*args):
             markdown.append('  <tbody>')
 
         if result['name']:
-            year_total_time += result['part1']['time'] + result['part2']['time']
+            year_total_time += result['part1']['time'] if result['part1']['verified'] else 0 + \
+                                result['part2']['time'] if result['part2']['verified'] else 0
 
             markdown.append('    <tr>')
             markdown.append('      <td align="left">')
