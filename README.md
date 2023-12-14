@@ -115,7 +115,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
   <tfoot>
     <tr>
       <th>Total time for year</th>
-      <th colspan="5" align="right">132.7799 ms</th>
+      <th colspan="5" align="right">4331.3485 ms</th>
     </tr>
   </tfoot>
 </table>
@@ -358,7 +358,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
   <tfoot>
     <tr>
       <th>Total time for year</th>
-      <th colspan="5" align="right">185.6434 ms</th>
+      <th colspan="5" align="right">1618.3096 ms</th>
     </tr>
   </tfoot>
 </table>
