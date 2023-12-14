@@ -347,8 +347,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
 </td>
       <td>⭐</td>
       <td align="right">3.0903 ms</td>
-      <td>★</td>
-      <td></td>
+      <td colspan="2"></td>
       <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_14.py)
