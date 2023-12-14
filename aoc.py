@@ -46,7 +46,14 @@ def command_run(year, day):
 
     try:
         instance = day_ref(year, day, SETTINGS['session_token'])
-        (p1_ans, p1_time), (p2_ans, p2_time) = instance.run()
+        result = instance.run()
+        if result is None:
+            return
+        elif result[1] is None:
+            (p1_ans, p1_time), _ = result
+            p2_ans, p2_time = None, None
+        else:
+            (p1_ans, p1_time), (p2_ans, p2_time) = result
     except ConnectionError as e:
         print(e, file=sys.stderr)
         return
@@ -109,7 +116,7 @@ def command_verify(year, day):
 
             match = re.findall('<p>Your puzzle answer was <code>(.+?)</code>\\.</p>', html)
             results[i]['part1']['verified'] = len(match) > 0 and match[0] == result['part1']['answer']
-            results[i]['part2']['verified'] = len(match) > 0 and match[1] == result['part2']['answer']
+            results[i]['part2']['verified'] = len(match) > 1 and match[1] == result['part2']['answer']
             print('Part 1:', result['part1']['verified'])
             print('Part 2:', result['part2']['verified'])
 
