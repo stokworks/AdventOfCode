@@ -182,14 +182,12 @@ def command_markdown(*args):
                 markdown.append('      <td>⭐</td>')
                 markdown.append('      <td align="right">{:.4f} ms</td>'.format(result['part1']['time']))
             else:
-                markdown.append('      <td>★</td>')
-                markdown.append('      <td></td>')
+                markdown.append('      <td colspan="2"></td>')
             if result['part2']['verified']:
                 markdown.append('      <td>⭐</td>')
                 markdown.append('      <td align="right">{:.4f} ms</td>'.format(result['part2']['time']))
             else:
-                markdown.append('      <td>★</td>')
-                markdown.append('      <td></td>')
+                markdown.append('      <td colspan="2"></td>')
             markdown.append('      <td align="center">')
             markdown.append('')
             markdown.append('[View]({}/blob/main/days/day{}_{:02}.py)'.format(SETTINGS['repository'], result['year'], result['day']))
