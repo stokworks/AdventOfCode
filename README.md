@@ -410,9 +410,9 @@ My solutions to [Advent of Code](https://adventofcode.com/).
 
 </td>
       <td>⭐</td>
-      <td align="right">0.6780 ms</td>
+      <td align="right">0.6723 ms</td>
       <td>⭐</td>
-      <td align="right">0.7858 ms</td>
+      <td align="right">0.8100 ms</td>
       <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_18.py)
@@ -423,7 +423,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
   <tfoot>
     <tr>
       <th>Total time for year</th>
-      <th colspan="5" align="right">6385.1675 ms</th>
+      <th colspan="5" align="right">6385.1860 ms</th>
     </tr>
   </tfoot>
 </table>

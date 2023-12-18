@@ -21,9 +21,7 @@ def get_area(instrs):
         sum(vertices[i][0] * vertices[(i + 1) % n][1] - vertices[(i + 1) % n][0] * vertices[i][1] for i in range(n)))
 
     # Pick's theorem
-    inner_cells = int(area) - edge_cells // 2 + 1
-
-    return inner_cells + edge_cells
+    return int(area) + int(edge_cells / 2) + 1
 
 
 @day(2023, 18)
