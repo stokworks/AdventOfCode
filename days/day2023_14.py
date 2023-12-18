@@ -1,6 +1,11 @@
 from days import AOCDay, day
 
 
+def rot90(rows):
+    for x in range(len(rows[0])):
+        yield tuple(rows[y][x] for y in reversed(range(len(rows))))
+
+
 def rot270(rows):
     for x in reversed(range(len(rows[0]))):
         yield tuple(rows[y][x] for y in range(len(rows)))
@@ -28,6 +33,13 @@ def load_west(rows):
         for i, c in enumerate(row):
             load += width - i if c == 'O' else 0
     return load
+
+
+def cycle(rows):
+    for _ in range(4):
+        rows = list(rot90([tilt_west(row) for row in rows]))
+
+    return rows
 
 
 def serialize(rows):
@@ -62,18 +74,7 @@ O.#..O.#.#
         return load_west([tilt_west(row) for row in rot270(self.rows)])
 
     def part2(self, input_data):
-        def cycle(rows):
-            return [
-                tilt_west(row) for row in rot270([
-                    tilt_west(row) for row in rot270([
-                        tilt_west(row) for row in rot270([
-                            tilt_west(row) for row in rot270(rows)
-                        ])
-                    ])
-                ])
-            ]
-
-        rows = cycle(self.rows)
+        rows = list(rot270(self.rows))
         prev_cycle_serialized = serialize(rows)
         history = []
         history_serialized = []
@@ -86,8 +87,7 @@ O.#..O.#.#
             prev_cycle_serialized = serialize(rows)
 
         first_occurrence = history_serialized.index(prev_cycle_serialized)
-        next_occurrence = len(history)
-        cycle_length = next_occurrence - first_occurrence
+        cycle_length = len(history) - first_occurrence
 
-        self.rows = history[first_occurrence:][(1_000_000_000 - first_occurrence) % cycle_length]
-        return self.part1(input_data)
+        rows = history[(1_000_000_000 - first_occurrence) % cycle_length + first_occurrence]
+        return load_west(rows)

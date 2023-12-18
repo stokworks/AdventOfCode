@@ -330,9 +330,9 @@ My solutions to [Advent of Code](https://adventofcode.com/).
 
 </td>
       <td>⭐</td>
-      <td align="right">5.3836 ms</td>
+      <td align="right">5.4086 ms</td>
       <td>⭐</td>
-      <td align="right">5.2126 ms</td>
+      <td align="right">5.1860 ms</td>
       <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_13.py)
@@ -346,8 +346,9 @@ My solutions to [Advent of Code](https://adventofcode.com/).
 
 </td>
       <td>⭐</td>
-      <td align="right">3.0903 ms</td>
-      <td colspan="2"></td>
+      <td align="right">3.0213 ms</td>
+      <td>⭐</td>
+      <td align="right">1126.4014 ms</td>
       <td align="center">
 
 [View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_14.py)
@@ -358,7 +359,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
   <tfoot>
     <tr>
       <th>Total time for year</th>
-      <th colspan="5" align="right">1618.3096 ms</th>
+      <th colspan="5" align="right">2744.6404 ms</th>
     </tr>
   </tfoot>
 </table>
