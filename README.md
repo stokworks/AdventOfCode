@@ -387,11 +387,27 @@ My solutions to [Advent of Code](https://adventofcode.com/).
 
 </td>
     </tr>
+    <tr>
+      <td align="left">
+
+[Day 17: Clumsy Crucible](https://adventofcode.com/2023/day/17)
+
+</td>
+      <td>⭐</td>
+      <td align="right">387.3473 ms</td>
+      <td>⭐</td>
+      <td align="right">761.1139 ms</td>
+      <td align="center">
+
+[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_17.py)
+
+</td>
+    </tr>
   </tbody>
   <tfoot>
     <tr>
       <th>Total time for year</th>
-      <th colspan="5" align="right">5235.2425 ms</th>
+      <th colspan="5" align="right">6383.7037 ms</th>
     </tr>
   </tfoot>
 </table>
