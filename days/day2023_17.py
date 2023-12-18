@@ -14,7 +14,6 @@ def path_find(grid, min_dist, max_dist):
     dest = (len(grid) - 1, len(grid[0]) - 1)
     dest_y, dest_x = dest
     heap = [(0, (0, 0), (0, 0))]
-    heat_loss = 0
     heat_map = dict()
     visited = set()
 
