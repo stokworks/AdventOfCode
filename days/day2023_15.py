@@ -1,6 +1,6 @@
 from days import AOCDay, day
 
-from collections import defaultdict, OrderedDict
+from collections import defaultdict
 
 
 def hash(val):
@@ -27,7 +27,7 @@ class Day2023_15(AOCDay):
     def part2(self, input_data):
         instrs = [(instr[:-1], None) if instr[-1] == '-' else (instr[:-2], int(instr[-1])) for instr in
                   input_data.split(',')]
-        boxes = defaultdict(OrderedDict)
+        boxes = defaultdict(dict)
 
         for lens, action in instrs:
             box_number = hash(lens)
