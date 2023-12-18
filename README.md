@@ -355,11 +355,27 @@ My solutions to [Advent of Code](https://adventofcode.com/).
 
 </td>
     </tr>
+    <tr>
+      <td align="left">
+
+[Day 15: Lens Library](https://adventofcode.com/2023/day/15)
+
+</td>
+      <td>⭐</td>
+      <td align="right">1.9624 ms</td>
+      <td>⭐</td>
+      <td align="right">3.1668 ms</td>
+      <td align="center">
+
+[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_15.py)
+
+</td>
+    </tr>
   </tbody>
   <tfoot>
     <tr>
       <th>Total time for year</th>
-      <th colspan="5" align="right">2744.6404 ms</th>
+      <th colspan="5" align="right">2749.7696 ms</th>
     </tr>
   </tfoot>
 </table>
