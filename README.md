@@ -419,11 +419,27 @@ My solutions to [Advent of Code](https://adventofcode.com/).
 
 </td>
     </tr>
+    <tr>
+      <td align="left">
+
+[Day 19: Aplenty](https://adventofcode.com/2023/day/19)
+
+</td>
+      <td>⭐</td>
+      <td align="right">1.8607 ms</td>
+      <td>⭐</td>
+      <td align="right">18.2174 ms</td>
+      <td align="center">
+
+[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2023_19.py)
+
+</td>
+    </tr>
   </tbody>
   <tfoot>
     <tr>
       <th>Total time for year</th>
-      <th colspan="5" align="right">6385.1860 ms</th>
+      <th colspan="5" align="right">6405.2641 ms</th>
     </tr>
   </tfoot>
 </table>
