@@ -135,7 +135,7 @@ def command_verify(year, day):
 
 def command_markdown(*args):
     results = json.loads(''.join(open(RESULTS_FILENAME).readlines()))
-    results.sort(key=lambda result: (result['year'], result['day']))
+    results.sort(key=lambda result: (-result['year'], result['day']))
     markdown = []
 
     current_year = None

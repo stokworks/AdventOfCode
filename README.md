@@ -4,7 +4,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
 
 # Completed problems
 
-## 2015
+## 2024
 <table>
   <thead>
     <tr>
@@ -18,96 +18,48 @@ My solutions to [Advent of Code](https://adventofcode.com/).
     <tr>
       <td align="left">
 
-[Day 1: Not Quite Lisp](https://adventofcode.com/2015/day/1)
+[Day 1: Historian Hysteria](https://adventofcode.com/2024/day/1)
 
 </td>
       <td>⭐</td>
-      <td align="right">0.0460 ms</td>
+      <td align="right">1.2076 ms</td>
       <td>⭐</td>
-      <td align="right">0.1463 ms</td>
+      <td align="right">8.0096 ms</td>
       <td align="center">
 
-[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_01.py)
+[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2024_01.py)
 
 </td>
     </tr>
     <tr>
       <td align="left">
 
-[Day 2: I Was Told There Would Be No Math](https://adventofcode.com/2015/day/2)
+[Day 2: Red-Nosed Reports](https://adventofcode.com/2024/day/2)
 
 </td>
       <td>⭐</td>
-      <td align="right">0.9695 ms</td>
+      <td align="right">2.5800 ms</td>
       <td>⭐</td>
-      <td align="right">0.8820 ms</td>
+      <td align="right">6.7885 ms</td>
       <td align="center">
 
-[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_02.py)
+[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2024_02.py)
 
 </td>
     </tr>
     <tr>
       <td align="left">
 
-[Day 3: Perfectly Spherical Houses in a Vacuum](https://adventofcode.com/2015/day/3)
+[Day 3: Mull It Over](https://adventofcode.com/2024/day/3)
 
 </td>
       <td>⭐</td>
-      <td align="right">1.5743 ms</td>
+      <td align="right">1.0450 ms</td>
       <td>⭐</td>
-      <td align="right">1.5050 ms</td>
+      <td align="right">0.6596 ms</td>
       <td align="center">
 
-[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_03.py)
-
-</td>
-    </tr>
-    <tr>
-      <td align="left">
-
-[Day 4: The Ideal Stocking Stuffer](https://adventofcode.com/2015/day/4)
-
-</td>
-      <td>⭐</td>
-      <td align="right">123.6174 ms</td>
-      <td>⭐</td>
-      <td align="right">4204.0907 ms</td>
-      <td align="center">
-
-[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_04.py)
-
-</td>
-    </tr>
-    <tr>
-      <td align="left">
-
-[Day 5: Doesn&apos;t He Have Intern-Elves For This?](https://adventofcode.com/2015/day/5)
-
-</td>
-      <td>⭐</td>
-      <td align="right">4.6751 ms</td>
-      <td>⭐</td>
-      <td align="right">4.9486 ms</td>
-      <td align="center">
-
-[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_05.py)
-
-</td>
-    </tr>
-    <tr>
-      <td align="left">
-
-[Day 6: Probably a Fire Hazard](https://adventofcode.com/2015/day/6)
-
-</td>
-      <td>⭐</td>
-      <td align="right">2.9338 ms</td>
-      <td>⭐</td>
-      <td align="right">63.5752 ms</td>
-      <td align="center">
-
-[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_06.py)
+[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2024_03.py)
 
 </td>
     </tr>
@@ -115,7 +67,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
   <tfoot>
     <tr>
       <th>Total time for year</th>
-      <th colspan="5" align="right">4408.9639 ms</th>
+      <th colspan="5" align="right">20.2903 ms</th>
     </tr>
   </tfoot>
 </table>
@@ -444,7 +396,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
   </tfoot>
 </table>
 
-## 2024
+## 2015
 <table>
   <thead>
     <tr>
@@ -458,48 +410,96 @@ My solutions to [Advent of Code](https://adventofcode.com/).
     <tr>
       <td align="left">
 
-[Day 1: Historian Hysteria](https://adventofcode.com/2024/day/1)
+[Day 1: Not Quite Lisp](https://adventofcode.com/2015/day/1)
 
 </td>
       <td>⭐</td>
-      <td align="right">1.2076 ms</td>
+      <td align="right">0.0460 ms</td>
       <td>⭐</td>
-      <td align="right">8.0096 ms</td>
+      <td align="right">0.1463 ms</td>
       <td align="center">
 
-[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2024_01.py)
+[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_01.py)
 
 </td>
     </tr>
     <tr>
       <td align="left">
 
-[Day 2: Red-Nosed Reports](https://adventofcode.com/2024/day/2)
+[Day 2: I Was Told There Would Be No Math](https://adventofcode.com/2015/day/2)
 
 </td>
       <td>⭐</td>
-      <td align="right">2.5800 ms</td>
+      <td align="right">0.9695 ms</td>
       <td>⭐</td>
-      <td align="right">6.7885 ms</td>
+      <td align="right">0.8820 ms</td>
       <td align="center">
 
-[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2024_02.py)
+[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_02.py)
 
 </td>
     </tr>
     <tr>
       <td align="left">
 
-[Day 3: Mull It Over](https://adventofcode.com/2024/day/3)
+[Day 3: Perfectly Spherical Houses in a Vacuum](https://adventofcode.com/2015/day/3)
 
 </td>
       <td>⭐</td>
-      <td align="right">1.0450 ms</td>
+      <td align="right">1.5743 ms</td>
       <td>⭐</td>
-      <td align="right">0.6596 ms</td>
+      <td align="right">1.5050 ms</td>
       <td align="center">
 
-[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2024_03.py)
+[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_03.py)
+
+</td>
+    </tr>
+    <tr>
+      <td align="left">
+
+[Day 4: The Ideal Stocking Stuffer](https://adventofcode.com/2015/day/4)
+
+</td>
+      <td>⭐</td>
+      <td align="right">123.6174 ms</td>
+      <td>⭐</td>
+      <td align="right">4204.0907 ms</td>
+      <td align="center">
+
+[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_04.py)
+
+</td>
+    </tr>
+    <tr>
+      <td align="left">
+
+[Day 5: Doesn&apos;t He Have Intern-Elves For This?](https://adventofcode.com/2015/day/5)
+
+</td>
+      <td>⭐</td>
+      <td align="right">4.6751 ms</td>
+      <td>⭐</td>
+      <td align="right">4.9486 ms</td>
+      <td align="center">
+
+[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_05.py)
+
+</td>
+    </tr>
+    <tr>
+      <td align="left">
+
+[Day 6: Probably a Fire Hazard](https://adventofcode.com/2015/day/6)
+
+</td>
+      <td>⭐</td>
+      <td align="right">2.9338 ms</td>
+      <td>⭐</td>
+      <td align="right">63.5752 ms</td>
+      <td align="center">
+
+[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2015_06.py)
 
 </td>
     </tr>
@@ -507,7 +507,7 @@ My solutions to [Advent of Code](https://adventofcode.com/).
   <tfoot>
     <tr>
       <th>Total time for year</th>
-      <th colspan="5" align="right">20.2903 ms</th>
+      <th colspan="5" align="right">4408.9639 ms</th>
     </tr>
   </tfoot>
 </table>
