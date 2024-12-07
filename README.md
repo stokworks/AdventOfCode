@@ -63,11 +63,43 @@ My solutions to [Advent of Code](https://adventofcode.com/).
 
 </td>
     </tr>
+    <tr>
+      <td align="left">
+
+[Day 4: Ceres Search](https://adventofcode.com/2024/day/4)
+
+</td>
+      <td>⭐</td>
+      <td align="right">41.3272 ms</td>
+      <td>⭐</td>
+      <td align="right">3.3409 ms</td>
+      <td align="center">
+
+[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2024_04.py)
+
+</td>
+    </tr>
+    <tr>
+      <td align="left">
+
+[Day 5: Print Queue](https://adventofcode.com/2024/day/5)
+
+</td>
+      <td>⭐</td>
+      <td align="right">5.5632 ms</td>
+      <td>⭐</td>
+      <td align="right">5.6156 ms</td>
+      <td align="center">
+
+[View](https://github.com/stokworks/AdventOfCode/blob/main/days/day2024_05.py)
+
+</td>
+    </tr>
   </tbody>
   <tfoot>
     <tr>
       <th>Total time for year</th>
-      <th colspan="5" align="right">20.2903 ms</th>
+      <th colspan="5" align="right">76.1372 ms</th>
     </tr>
   </tfoot>
 </table>
