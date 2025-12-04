@@ -1,9 +1,9 @@
 = Day 2015-5 =
 == Part 1 ==
 238
-== Ran in 4.6751 ms ==
+== Ran in 4.9612 ms ==
 
 == Part 2 ==
 69
-== Ran in 4.9486 ms ==
+== Ran in 5.0203 ms ==
 

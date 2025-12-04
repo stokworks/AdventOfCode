@@ -1,9 +1,9 @@
 = Day 2024-1 =
 == Part 1 ==
 2580760
-== Ran in 1.2076 ms ==
+== Ran in 0.9258 ms ==
 
 == Part 2 ==
 25358365
-== Ran in 8.0096 ms ==
+== Ran in 8.2078 ms ==
 

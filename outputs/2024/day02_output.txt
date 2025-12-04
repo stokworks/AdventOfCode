@@ -1,9 +1,9 @@
 = Day 2024-2 =
 == Part 1 ==
 379
-== Ran in 2.5800 ms ==
+== Ran in 2.1745 ms ==
 
 == Part 2 ==
 430
-== Ran in 6.7885 ms ==
+== Ran in 7.0899 ms ==
 
